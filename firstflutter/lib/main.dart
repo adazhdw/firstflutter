@@ -1,7 +1,8 @@
+import 'package:firstflutter/main1.dart';
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
+import 'package:english_words/english_words.dart';///第2步: 使用外部包(package)
 
-void main() => runApp(MyApp());
+void main() => runApp(MyApp1());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.

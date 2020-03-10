@@ -1,3 +1,4 @@
+import 'package:firstflutter/shrine/home.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -50,7 +51,10 @@ class _LoginState extends State<LoginPage> {
                   child: Text("CANCEL")),
               RaisedButton(
                 onPressed: () {
-                  Navigator.pop(context);
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) {
+                    return HomePage();
+                  }));
                 },
                 child: Text('NEXT'),
               )

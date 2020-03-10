@@ -1,8 +1,6 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 
-import 'login.dart';
-
 /// *
 /// 测试学习页面
 class MyApp1 extends StatelessWidget {
@@ -114,7 +112,7 @@ class RandomWordsState3 extends RandomWordsState2 {
 
   void _pushSaved() {
     Navigator.of(context).push(new MaterialPageRoute(builder: (context) {
-      /*final tiles = _saved.map((pair) {
+      final tiles = _saved.map((pair) {
         return new ListTile(
           title: new Text(
             pair.asPascalCase,
@@ -131,8 +129,7 @@ class RandomWordsState3 extends RandomWordsState2 {
         body: new ListView(
           children: divided,
         ),
-      );*/
-      return new LoginPage();
+      );
     }));
   }
 }

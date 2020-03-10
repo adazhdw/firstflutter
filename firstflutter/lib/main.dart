@@ -1,8 +1,8 @@
-import 'package:firstflutter/example/main1.dart';
 import 'package:firstflutter/route/home.dart';
+import 'package:firstflutter/shrine/main.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp1());
+void main() => runApp(Shrine());
 
 class MyApp extends StatelessWidget {
   @override

@@ -1,5 +1,5 @@
 import 'package:firstflutter/route/home.dart';
-import 'package:firstflutter/shrine/main.dart';
+import 'package:firstflutter/shrine/app.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(Shrine());

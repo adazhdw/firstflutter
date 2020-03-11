@@ -16,7 +16,7 @@ class _LoginState extends State<LoginPage> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(title: new Text('Login')),
+//      appBar: AppBar(title: new Text('Login')),
       body: SafeArea(
           child: ListView(
         padding: EdgeInsets.symmetric(horizontal: 24.0),
@@ -24,7 +24,7 @@ class _LoginState extends State<LoginPage> {
           SizedBox(height: 80.0),
           Column(
             children: <Widget>[
-              Image.asset('assets/diamond.png'),
+              Image.asset('assets/images/diamond.png'),
               SizedBox(height: 16.0),
               Text('SHRINE')
             ],
@@ -48,7 +48,7 @@ class _LoginState extends State<LoginPage> {
                     userNameController.clear(); //清除用户名和密码内容
                     passwordController.clear();
                   },
-                  child: Text("CANCEL")),
+                  child: Text("CANCEL"),),
               RaisedButton(
                 onPressed: () {
                   Navigator.of(context)

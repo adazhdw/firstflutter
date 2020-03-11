@@ -41,12 +41,12 @@ class HomeState extends State<HomePage> {
         crossAxisCount: 2, //指定每横行展示多少条目。
         padding: EdgeInsets.all(16.0), //给 GridView 的四周都增加了空间
         childAspectRatio: 8.0 / 9.0, //以宽高比（宽除以高）的形式定义了条目的大小
-        children: buildCardList(20),
+        children: _buildCardList(20),
       ),
     );
   }
 
-  List<Card> buildCardList(int count) {
+  List<Card> _buildCardList(int count) {
     List<Card> cards = List.generate(
         count,
         (int index) => Card(
@@ -55,19 +55,19 @@ class HomeState extends State<HomePage> {
                 children: <Widget>[
                   AspectRatio(
                     aspectRatio: 18.0 / 11.0,
-                    child: Image.asset('assets/diamond.png'),
+                    child: Image.asset('assets/images/diamond.png'),
                   ),
                   Padding(
                     padding: EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start, //将文本向头部对齐
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Text('Title'),
+                        Text('Title',),
                         SizedBox(height: 8.0),
                         Text('Secondary Text'),
                       ],
                     ),
-                  ),
+                  )
                 ],
               ),
             ));
